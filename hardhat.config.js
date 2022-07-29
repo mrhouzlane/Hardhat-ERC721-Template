@@ -6,12 +6,12 @@ require("solidity-coverage");
 module.exports = {
   solidity: "0.8.1",
   mocha: {
-    timeout: 400000,
+    timeout: 400000, // updated for tests 
   },
   networks: {
     hardhat: {
       accounts: {
-        count: 500,
+        count: 500, // accounts for tests (loops)
       }
     }
   }
