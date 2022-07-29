@@ -2,11 +2,11 @@
 
 #### Compile smart contracts :
 
-Run : ``` npx hardhat compile ``` 
+- Run : ``` npx hardhat compile ``` 
 
 
 #### Tests :
 
-Run : ``` npx hardhat test ``` 
-Coverage : ``` npx hardhat coverage ``` 
+- Run : ``` npx hardhat test ``` 
+- Coverage : ``` npx hardhat coverage ``` 
 
