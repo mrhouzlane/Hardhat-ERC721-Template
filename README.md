@@ -1,10 +1,11 @@
-# Sample Hardhat ERC721 Template 
+## Sample Hardhat ERC721 Template 
 
-``` Compile smart contracts ``` 
+#### Compile smart contracts :
 
 Run : ``` npx hardhat compile ``` 
 
-``` Tests ``` :
+
+#### Tests :
 
 Run : ``` npx hardhat test ``` 
 Coverage : ``` npx hardhat coverage ``` 
