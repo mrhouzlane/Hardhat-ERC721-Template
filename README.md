@@ -1,13 +1,11 @@
-# Sample Hardhat Project
+# Sample Hardhat ERC721 Template 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+``` Compile smart contracts ``` 
 
-Try running some of the following tasks:
+Run : ``` npx hardhat compile ``` 
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+``` Tests ``` :
+
+Run : ``` npx hardhat test ``` 
+Coverage : ``` npx hardhat coverage ``` 
+

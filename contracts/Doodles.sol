@@ -18,7 +18,7 @@ contract Doodles is ERC721, ERC721Enumerable, Ownable {
 
     mapping(address => uint8) private _allowList;
 
-    constructor() ERC721("Doodles", "DOODLE") {}
+    constructor() ERC721("Doodles", "DD") {}
 
     function setIsAllowListActive(bool _isAllowListActive) external onlyOwner {
         isAllowListActive = _isAllowListActive;

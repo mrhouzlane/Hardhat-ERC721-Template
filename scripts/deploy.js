@@ -2,14 +2,11 @@
 const hre = require("hardhat");
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
-  const unlockTime = currentTimestampInSeconds + ONE_YEAR_IN_SECS;
-
-  const DoodlesAmount = hre.ethers.utils.parseEther("1");
+  
+  const DoodlesAmount = hre.ethers.utils.parseEther("0.1");
 
   const Doodles = await hre.ethers.getContractFactory("Doodles");
-  const doodles = await Lock.deploy(Doodles, { value: DoodlesAmount });
+  const doodles = await Doodles.deploy();
 
   await doodles.deployed();
 
