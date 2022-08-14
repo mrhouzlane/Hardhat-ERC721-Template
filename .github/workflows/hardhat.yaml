@@ -10,7 +10,6 @@ jobs:
       - uses: actions/stale@v5
       - name: running tests
         run: |
-          npm install 
           npx hardhat test 
       
     
