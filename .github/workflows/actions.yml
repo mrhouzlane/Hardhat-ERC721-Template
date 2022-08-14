@@ -11,6 +11,8 @@ jobs:
         run: |
           pwd
           ls 
+      - name : Checkout 
+        uses : actions/checkout@v3.02  
       - name : Simple JS Action
         id : greet 
         uses : actions/hello-world-javascript-action@v1.1
@@ -18,3 +20,4 @@ jobs:
           who-to-greet : Mehdi 
       - name : Log Greeting Time 
         run : echo "${{ steps.greet.outputs.time}}"
+      
