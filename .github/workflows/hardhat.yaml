@@ -1,0 +1,13 @@
+name : Github actions 
+
+on: push
+
+jobs:
+  build:
+    runs-on: macos-latest
+      
+    steps:
+      - uses: actions/stale@v5
+    
+  
+  
