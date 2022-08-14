@@ -1,0 +1,15 @@
+name : Github actions 
+
+on:
+  pull_request:
+  push: 
+    branches:
+      - master
+      - dvelop 
+
+jobs :
+  build: 
+  
+  runs-on: macos-latest
+  
+  
