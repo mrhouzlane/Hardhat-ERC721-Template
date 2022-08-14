@@ -1,29 +1,29 @@
-name: Shell Commands 
+# name: Shell Commands 
 
-on: [push]
+# on: [push]
 
-jobs: 
-  run-shell-command:
-    runs-on: macos-latest
-    steps: 
-      - name: echo a string
-        run: echo "Hardhat project"
-      - name: mutiline script 
-        run: |
-          node -v 
-          npm -v 
-      - name: python Command
-        run : |
-          import platform 
-          print(platform.processor())
-        shell: python 
+# jobs: 
+#   run-shell-command:
+#     runs-on: macos-latest
+#     steps: 
+#       - name: echo a string
+#         run: echo "Hardhat project"
+#       - name: mutiline script 
+#         run: |
+#           node -v 
+#           npm -v 
+#       - name: python Command
+#         run : |
+#           import platform 
+#           print(platform.processor())
+#         shell: python 
 
-  run-windows-commands: 
-    runs-on: windows-latest
-    needs: ["run-shell-command"]
-    steps: 
-      - name : Directory Powershell 
-        run : Get-Location 
-      - name : Directory bash
-        run : pwd
-        shell: bash
+#   run-windows-commands: 
+#     runs-on: windows-latest
+#     needs: ["run-shell-command"]
+#     steps: 
+#       - name : Directory Powershell 
+#         run : Get-Location 
+#       - name : Directory bash
+#         run : pwd
+#         shell: bash
