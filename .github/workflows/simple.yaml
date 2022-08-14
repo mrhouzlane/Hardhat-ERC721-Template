@@ -1,0 +1,14 @@
+name: Shell Commands 
+
+on: [push]
+
+jobs: 
+  run-shell-command:
+    runs-on: macos-latest
+    steps: 
+      - name: echo a string
+        run: "Hardhat project"
+      - name: mutiline script 
+        run: |
+          node -v 
+          npm -v 
