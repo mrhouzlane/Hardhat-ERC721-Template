@@ -1,17 +1,22 @@
 name : Matrix 
 on : push 
 
-jobs:
+jobs: 
   node-version: 
+    strategy: 
+      matrix: 
+        node-version : [6,8,10]
+      max-parallel: 2
     runs-on : ubuntu-latest
     steps: 
       - name: log node-version
         run : node -v 
       - uses: actions/setup-node@v3
         with : 
-          node-version: 6
+          node-version: ${{ matrix.node_version}}
       - name: Log node version 
         run : node -v 
+  
 
         
 
