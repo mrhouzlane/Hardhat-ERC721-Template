@@ -1,9 +1,9 @@
 name : Matrix 
 on : push 
 
-
-jobs: 
+jobs:
   node-version: 
+    runs-on : ubuntu-latest
     steps: 
       - name: log node-version
         run : node -v 
